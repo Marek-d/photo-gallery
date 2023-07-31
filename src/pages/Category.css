@@ -1,0 +1,41 @@
+/**** COLORS ****/
+.go-back {
+  text-decoration: none;
+  color: #000;
+}
+
+.count-photos {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.4em 0.8em;
+}
+
+.category-name {
+  font-size: 0.9em;
+  letter-spacing: 0;
+  vertical-align: top;
+}
+
+.gallery-categories .one-photo {
+  width: 23%;
+  min-width: 250px;
+  height: 14.5em;
+  background-color: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 17, 0.2666666667);
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.gallery-categories .one-photo:hover {
+  transform: scale(1.05);
+}
+.gallery-categories .one-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 4px;
+}
+.gallery-categories .one-photo p {
+  text-align: center;
+  transform: translateY(100%);
+}/*# sourceMappingURL=Category.css.map */

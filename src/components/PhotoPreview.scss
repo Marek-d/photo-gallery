@@ -1,0 +1,63 @@
+@import "../css/variables";
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 67%;
+    height: 95vh;
+    max-height: 95vh;
+
+    img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .close-photo-icon {
+        box-sizing: border-box;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 3.2em;
+        padding: 0.3em;
+        background-color: $black;
+        border-radius: 50%;
+        opacity: 0.56;
+        box-shadow: 0 4px 24px #00000014;
+        cursor: pointer;
+
+        path {
+            stroke: $white;
+        }
+    }
+
+    .arrows {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .arrow-left-icon {
+            transform: translateX(-50%);
+        }
+
+        .arrow-right-icon {
+            transform: translateX(50%);
+        }
+
+        .arrow {
+            font-size: 3em;
+            background-color: $white;
+            padding: 0.3em;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}

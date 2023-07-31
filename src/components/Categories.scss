@@ -1,0 +1,88 @@
+@import "../css/variables";
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em 0;
+
+    h2 {
+        font-weight: medium;
+        font-size: 2.25em;
+    }
+
+    h5 {
+        margin-top: 2.2em;
+        font-size: 1.125em;
+        font-weight: normal;
+    }
+
+    .gallery-categories {
+        width: 100%;
+        margin-top: 2.5em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.7em;
+
+        .gallery-category {
+            display: block;
+            width: 23%;
+            min-width: 200px;
+            height: 14.5em;
+            background-color: $white;
+            box-shadow: 0 4px 24px #0014;
+            border-radius: 4px;
+            opacity: 1;
+            position: relative;
+            transition: transform 0.4s linear;
+            text-decoration: none;
+            color: $black;
+
+            .gallery-photo {
+                width: 100%;
+                height: 77.2%;
+                background-color: transparent;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                    border-radius: 4px 4px 0 0;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.04);
+                cursor: pointer;
+            }
+
+            p {
+                text-align: center;
+                transform: translateY(100%);
+            }
+        }
+
+        .add-category {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            .add-category-icon {
+                font-size: 1.5em;
+                opacity: 0.42;
+            }
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111, 111, 111, 0.8); // Here you choose the color and opacity that you want to apply
+    z-index: 9; 
+}
